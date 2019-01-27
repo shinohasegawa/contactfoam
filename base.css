@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	font-family: "游ゴシック", "Yu Gothic";
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    /*background-image:url(images/thankyou.jpg);*/
+    max-width: 100%;
+    margin-top: 1em;
+}
+
+.img img{
+    display: block;
+    margin: 40px auto 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.red {color: red;}
+.blue {color: blue;}
+.green {color: green;}
+.small {font-size: .8rem;}
+.large {font-size: 1.6rem;}
+.bold {font-weight: bold;}
+.center {text-align: center;}
+.inline{float: left;}
+/*--------------wrap--------------------*/
+.wrap {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+}
+/*-------------header--------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    width: 800px;
+}
+h1 .large {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+h1 .spece{
+    letter-spacing: .1rem;
+}
+.tel-num {
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top:0;
+    padding: .2em;
+    box-sizing: border-box;
+}
+.tel-num p {
+    line-height: 1.2;
+    text-align: center;
+}
+.tel-num p span {
+    font-size: 1.6rem;
+}
+
+/*-------------nav--------------------*/
+nav {
+    margin-top: .5em;
+    background-color: rgb(153, 153, 153);
+    width: 1200px;
+    box-sizing: border-box;
+}
+nav ul {
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2em;
+    width: 169.5px;
+}
+nav ul li+li {
+    margin-left: 2px;
+}
+nav ul li a {
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(153,153,153,1);
+    color :#fff;
+}
+
+nav ul li span {
+    background-color: rgb(189, 66, 66);
+    color :#fff;
+    display: block;
+}
+/*-------------bread------------------*/
+
+#bread {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 1em;
+  }
+  
+#bread li{
+    display:inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+  }
+  
+  #bread li:after{/* ▶を表示*/
+    font-family: "Font Awesome 5 Free";
+    content: '\f0da';
+    padding: 0 3px;
+    color: silver;
+  }
+  
+  #bread li:last-child:after{
+    content: '';
+  }
+  
+  #bread li a {
+      text-decoration: none;
+      color: #888;
+  }
+  
+
+
+
+/*-------------main--------------------*/
+main {
+    margin-top: .5em;
+    width: 770px;
+    margin: auto;
+    padding: 0;
+}
+main .subpage {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(28, 74, 28);
+    /*background: linear-gradient(to bottom, rgba(127, 255, 100,1) 0%,rgba(0, 255, 127,1) 50%,rgba(0, 255, 100,1) 51%,rgba(127, 255, 100,1) 100%);*/
+    margin-bottom: 1em;
+    margin-top: 1em;
+    height: 3em;
+    line-height: 3em;
+    color: #fff;
+    font-weight: bold;
+}
+/*-------------form------------------*/
+form {
+    width: 700px;
+    margin: auto;
+    padding: 2em;
+}
+form h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: .5em;
+}
+form div {
+    width: 600px;
+    margin: auto;
+    margin-top: 2em;
+}
+form p {margin: .5em 0;}
+h3 {font-size: 1.4rem;
+    margin-bottom: .5em;
+}
+.need {
+    border: red 1px dashed;
+    margin-left: .5em;
+    border-radius: 10px;
+    color: red;
+    padding: .1em;
+}
+
+#name,#email {
+    width: 40em;
+    height: 2.5em;;
+}
+#name,#email,#freetext {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#freetext {
+    width: 600px;
+    height: 100px;
+    font-size: 2rem;
+}
+/*性別*/
+.gender input {
+    width: 1em;
+    height: 1em;
+    /* margin-right: 1em; */
+}
+#women {
+    margin-left: 2em;
+}
+
+/*日時*/
+.date p span {
+    text-decoration: line-through;
+}
+.date input {
+    width: 15px;
+    height: 15px;;
+}
+.date label {
+    font-size: 20px;
+}
+
+/*submit*/
+.submit input {
+    width: 10em;
+    height: 3em;
+}
+
+
+
+
+/*タブメニュー*/
+
+ul.menu {
+list-style: none;
+padding: 0;
+margin: 0;
+font-size: 0;
+background: #eee;
+}
+ul.menu li {
+display: inline-block;
+}
+ul.menu li a {
+display: inline-block;
+font-size: 1.2rem;
+width: 200px;
+height: 50px;
+line-height: 40px;
+text-align: center;
+text-decoration: none;
+padding: 7px;
+color: #333;
+background: #eee;
+}
+ul.menu li a.active {
+background: #222;
+color: #fff;
+}
+ul.menu li a:not(.active):hover {
+opacity: 0.5;
+transition: .8s;
+}
+.content {
+display: none;
+}
+.content.active {
+display: block;
+border: 1px solid #222;
+}
+
+
+/*-------------footer------------------*/
+footer {
+    margin-top: 1em;
+    width: 100%;
+    background-color: #333;
+}
+footer p {
+    color: #fff;
+}
